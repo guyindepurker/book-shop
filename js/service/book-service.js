@@ -2,7 +2,6 @@
 const BOOKSDB = "BooksDB";
 const PAGE_SIZE = 5;
 var gPageIdx = 0;
-// var gSortBy = 'NAME';
 var gBooks;
 
 _createBooks();
@@ -20,7 +19,7 @@ function getBookById(bookId) {
 }
 
 function addBook(name, price) {
-  gBooks.unshift(_createBook(name, price, "imgs/defult.jpg"));
+  gBooks.unshift(_createBook(name, price, 'imgs/defult.jpg'));
   _saveBooksToStorage();
 }
 
@@ -42,7 +41,6 @@ function updateBook(bookId, newPrice) {
 }
 
 function updateRate(book, diff) {
-  console.log("dif");
   if (diff === -1) {
     book.property--;
   } else if (diff === 1) {
@@ -58,9 +56,7 @@ function prevPage() {
   if (gPageIdx <= 0) return;
   gPageIdx--;
 }
-// function setSort(sortBy) {
-//     gSortBy = sortBy;
-// }
+
 
 function sortByName() {
     return gBooks.sort(function(a, b) {

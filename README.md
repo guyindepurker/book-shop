@@ -1,5 +1,5 @@
 # Book Shop
-Simple Book-Shoop app written in vanila js.
+Simple Book-Shop app written in vanila js.
 
 the app is part of my studies on the bootcamp of coding academy.
 
